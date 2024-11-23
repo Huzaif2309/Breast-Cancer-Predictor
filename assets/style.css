@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    line-height: 1.6;
+}
+
+.css-j5r0tf {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #6A89CC, #82CCDD);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.css-j5r0tf:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #EAEAEA;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #DADADA;
+    font-size: 1.5rem;
+}
+
+.stSidebar {
+    background-color: #ECF0F1;
+    border-right: 2px solid #BDC3C7;
+    padding: 1rem;
+}
+
+.stSidebar .block-container {
+    background-color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.diagnosis {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.diagnosis.benign {
+    background-color: #2ECC71;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3);
+}
+
+.diagnosis.malicious {
+    background-color: #E74C3C;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
+}
+
+button {
+    background: linear-gradient(135deg, #3498DB, #2980B9);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2980B9, #3498DB);
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #BDC3C7;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #3498DB;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #2980B9;
+}
+
+.plotly {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+    .css-j5r0tf {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .diagnosis {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .plotly {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
